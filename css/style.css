@@ -1,0 +1,242 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 25, 2023, 10:02:48 PM
+    Author     : Chang Ching We
+*/
+
+body{
+    background: #E9DAC4;
+    border: solid gray 1px;
+    width:50%;
+    height: auto;
+    border-radius: 2px;
+    margin: 120px auto;
+    padding: 10px;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #749EB2;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+     color: midnightblue;
+}
+
+/* Footer */
+div.footer{
+    line-height: 0.5;
+    margin-top: auto;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+.button, 
+.button_logout,
+.button_del,
+.button_cxl, 
+.button_back{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #749EB2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#table_cust_list .button, 
+#table_cust_list .button_del {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #749EB2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover,
+.button_back:hover,
+#table_cust_list .button:hover {
+    background-color: darkseagreen;
+}
+
+.button_cxl:hover,
+#table_cust_list .button_del:hover,
+.button_logout:hover {
+    background-color: lightcoral;
+}
+
+/* Table */
+.table_sign_up,
+.table_msg_service,
+.table_cust_list,
+.table_cust_prof_adm,
+.table_msg_list,
+.table_cust_prof_cust,
+.table_msg_list_cust,
+.table_update_profile,
+div.btn_row{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_contact_us,
+.table_cust_list,
+.table_cust_prof_adm,
+.table_msg_list,
+.table_cust_prof_cust,
+.table_msg_list_cust {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 200px
+}
+
+.table_contact_us {
+    text-align: center;
+}
+
+#table_cust_list,
+#table_msg_list,
+#table_msg_list_cust {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#table_cust_list th, 
+#table_cust_list td,
+#table_msg_list th, 
+#table_msg_list td,
+#table_msg_list_cust th,
+#table_msg_list_cust td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#table_cust_list th,
+#table_msg_list th,
+#table_msg_list_cust th {
+    padding: 10px 0px;
+    color: #fff;
+    background:#749EB2;
+}
+
+#table_cust_prof_adm th, 
+#table_cust_prof_adm td,
+#table_cust_prof_cust,
+#table_cust_prof_cust {
+    text-align: justify;
+    border: 0px;
+}
+
+td:first-child {
+    width: 50%; /* sets the width of the first td element to 50% of the table width */
+}
+
+#table_cust_list td:first-child,
+#table_msg_list td:first-child,
+#table_msg_list_cust td:first-child{
+    width: 12%; /* sets the width of the first td element to 12% of the table width */
+    text-align: center;
+}
+
+#table_cust_prof_adm td:first-child,
+#table_cust_prof_cust td:first-child {
+    width: 35%; /* sets the width of the first td element to 35% of the table width */
+}
+
+div > label, input, th, td {
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+#table_cust_list th, 
+#table_cust_list td, 
+#table_msg_list th,
+#table_msg_list td,
+#table_msg_list_cust th,
+#table_msg_list_cust td {
+    line-height: 2.5;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#table_cust_prof_adm th, 
+#table_cust_prof_adm td,
+#table_cust_prof_cust th,
+#table_cust_prof_cust td {
+    line-height: 1.5;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+div > label {
+    width: 50%;
+}
+
+div.btn_row{
+    margin-top: 20px;
+}
